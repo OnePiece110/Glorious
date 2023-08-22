@@ -112,7 +112,7 @@
     canvas.style.top = '0%'
     canvas.style.bottom = '0%'
     canvas.style.right = '0%'
-    canvas.style.marginTop = window.innerHeight * .15 + 'px'
+    canvas.style.marginTop = window.innerHeight * .35 + 'px'
   }
 
   function event () {
@@ -123,7 +123,7 @@
         return
       }
       text = texts[textIndex]
-      console.log(textIndex)
+      console.log(text)
     }, false)
 
     document.addEventListener('touchstart', function (e) {
@@ -133,7 +133,7 @@
         return
       }
       text = texts[textIndex]
-      console.log(textIndex)
+      console.log(text)
     }, false)
   }
 
@@ -209,10 +209,10 @@
     }
   }
   
-  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    if(!isChrome){
-      $('#iframeAudio').remove()
-  }
+  // var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  //   if(!isChrome){
+  //     $('#iframeAudio').remove()
+  // }
   
   // setTimeout(() => {
     init()  
